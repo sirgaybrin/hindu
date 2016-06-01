@@ -23,7 +23,6 @@ Example:
 
 "
 LINK="https://epaper.thehindu.com/pdf/$(date +"%Y")/$(date +"%m")/$(date +"%d")/$(date +"%Y%m%d")$1$2.zip"
-cd /home/debdoot/hindu
 wget -c $LINK
 unzip $(date +"%Y%m%d")$1$2.zip
 rm $(date +"%Y%m%d")$1$2.zip
